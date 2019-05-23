@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Map;
+
 public class DuplicateStringAndOccurence {
 
 	public static void main(String[] args) {
@@ -55,7 +57,11 @@ public class DuplicateStringAndOccurence {
 		
 		for(String s:set)
 		{
-			System.out.println("Duplicate word " +s+ " Occurence " +map.get(s)+ " Times");
+			if(map.get(s) > 1) // This condition gives you only the duplicate character and its occurence. If you remove it gives all the charaters occurenece
+			{                     
+				System.out.println("Duplicate word " +s+ " Occurence " +map.get(s)+ " Times");
+			}
+			
 		}
 		
 		
