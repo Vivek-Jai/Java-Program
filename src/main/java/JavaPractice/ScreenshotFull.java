@@ -5,29 +5,23 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import ru.yandex.qatools.ashot.AShot;
-
+import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-public class Screenshot {
+public class ScreenshotFull {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+
 		System.setProperty("webdriver.chrome.driver", "C:\\sel\\Selenium\\driver\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://www.google.com/");
-		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\sel\\Screenshot\\gog.png"));
-        
-        
-       
-        
-        
+		driver.get("https://www.gmail.com/");
+		AShot aSht = new AShot();
+        Screenshot sc = aSht.shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+    	ImageIO.write(sc.getImage(), "PNG", new File("C:\\sel\\Screenshot\\Gmail.png"));
 	}
 
 }
