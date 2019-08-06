@@ -4,7 +4,7 @@ public class SwapStringWithoutThirdVariable {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String a = "Hello vivky"; 
+		/*String a = "Hello vivky"; 
         String b = "World"; 
           
         // Print String before swapping 
@@ -24,12 +24,12 @@ public class SwapStringWithoutThirdVariable {
           
         // print String after swapping 
         System.out.println("Strings after swap: a = " +  
-                                     a + " and b = " + b);   
+                                     a + " and b = " + b);   */
         
-       /* String Str = new String("Welcome to geeksforwhite"); 
+        String Str = new String("Welcome to geeksforwhite"); 
         
        
-        System.out.println(Str.substring(0,10)); */
+        System.out.println(Str.substring(0,10)); 
     }     
 	}
 
