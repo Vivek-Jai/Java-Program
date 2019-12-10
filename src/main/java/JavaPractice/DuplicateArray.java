@@ -9,20 +9,21 @@ public class DuplicateArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		 int a[] ={ 1,2,3,5,5,6,8,9,9};
+		 int a[] ={ 1,2,3,5,5,6,8,9,9,9,3,3,3};
+		
 		  
-	       /* HashSet<Integer> set = new HashSet<Integer>(); using collections
+	        /*HashSet<Integer> set = new HashSet<Integer>(); //using collections
 	  
 	        for (int array : a)
 	        {
-	            if(!set.add(array)) // Print duplicate element
+	           if(!set.add(array)) // Print duplicate element
 	            {
 	                System.out.println("Duplicate Element is : "+array);
-	            }*/
+	            }
 	            
-	            /*if(set.add(array)) //Remove duplicate element
+	            if(set.add(array)) //Remove duplicate element
 	            {
-	                System.out.println("Duplicate Element is : "+array);
+	                System.out.println("Unique Element is : "+array);
 	            }
 	        }*/
 	            
@@ -32,11 +33,17 @@ public class DuplicateArray {
 	            	{ 
 	            		if (a[i]==(a[j])) 
 	            		{
+	            			
 	            			System.out.println("The duplicate elements are:" +a[i]);
 	            		}
+	            		
 	            	}
+	            	
 	            }
-
+	            
+	          
+	            
+	            
 	            	
 
 }

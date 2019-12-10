@@ -17,7 +17,7 @@ public class Collection {
 		// TODO Auto-generated method stub
 
 		
-		/*Hashtable <Integer,String> hm = new Hashtable <Integer,String>();
+		Hashtable <Integer,String> hm = new Hashtable <Integer,String>();
 		
 		hm.put(1, "java");
 		hm.put(2, "c#");
@@ -26,7 +26,7 @@ public class Collection {
 		
 		 Set<Integer> st =hm.keySet();
 		 
-		      Iterator<Integer> it=  st.iterator();
+		      //Iterator<Integer> it=  st.iterator();
 		Iterator<Integer> it = hm.keySet().iterator();
 		      
 		      while(it.hasNext())
@@ -35,10 +35,10 @@ public class Collection {
 		    	  Integer str = it.next();
 		    	  String value = hm.get(str);
 		    	  
-		    	  //System.out.println("the int values are:"+ str + "\t\t values:" +hm.get(str));
+		    	  
 		    	  System.out.println("the int values are: "+ str + "\t values: " +value);
 		    	  
-		      }*/
+		      }
 		
 		
 		
@@ -75,7 +75,7 @@ public class Collection {
 		         System.out.println(it.next());
 	}*/
 		
-		List<String> al=new ArrayList<String>();    
+		/*List<String> al=new ArrayList<String>();    
         al.add("Amit");    
         al.add("Vijay");    
         al.add("Kumar");    
@@ -85,7 +85,7 @@ public class Collection {
         while(itr.hasNext()){    
               
         System.out.println(itr.next()); 
-        }    
+        }    */
 
 }
 }

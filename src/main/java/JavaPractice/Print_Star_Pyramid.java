@@ -1,5 +1,7 @@
 package JavaPractice;
 
+
+
 public class Print_Star_Pyramid {
 
 	public static void main(String[] args) {
@@ -17,9 +19,13 @@ public class Print_Star_Pyramid {
 			
 			System.out.println();
 		}
+		
+		
 
 	}
 */
+		
+		
 		
 int x=5, y=10, temp;
 		

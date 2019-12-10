@@ -18,7 +18,7 @@ String str = "this is java";
 			if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u')
 			{
 				ch =str.charAt(i);
-				//System.out.println("the vowels are:" +ch);
+				System.out.println("the vowels are:" +ch);
 				
 				count++;
 				
