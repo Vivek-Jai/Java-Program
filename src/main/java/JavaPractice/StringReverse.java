@@ -5,12 +5,16 @@ public class StringReverse {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s = "121";
+		String s = "hello";
 		String k ="";
 		
+		StringBuffer bf= new StringBuffer(s);
+		System.out.println(bf.reverse());
 		
 		
-		for(int i=s.length()-1; i>=0; i--)
+		
+		
+		/*for(int i=s.length()-1; i>=0; i--)
 		{
 //System.out.print(s.charAt(i));
 			k = k + s.charAt(i);
@@ -29,5 +33,6 @@ public class StringReverse {
 		
 	
 
+}*/
 }
 }
