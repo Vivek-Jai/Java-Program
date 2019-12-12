@@ -12,7 +12,7 @@ public class DuplicateArray {
 		 int a[] ={ 1,2,3,5,5,6,8,9,9,9,3,3,3};
 		
 		  
-	        /*HashSet<Integer> set = new HashSet<Integer>(); //using collections
+	        HashSet<Integer> set = new HashSet<Integer>(); //using collections
 	  
 	        for (int array : a)
 	        {
@@ -25,9 +25,9 @@ public class DuplicateArray {
 	            {
 	                System.out.println("Unique Element is : "+array);
 	            }
-	        }*/
+	        }
 	            
-	            for (int i = 0; i < a.length; i++) { 
+	            /*for (int i = 0; i < a.length; i++) { 
 	            	
 	            	for (int j = i+ 1 ; j < a.length; j++) 
 	            	{ 
@@ -39,7 +39,7 @@ public class DuplicateArray {
 	            		
 	            	}
 	            	
-	            }
+	            }*/
 	            
 	          
 	            
