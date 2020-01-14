@@ -34,10 +34,6 @@ public class TakeScreenshot {
 		
 		ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir")+"/Errorscreenshots/ScreenshotName.png"));
 		
-		
-		
-		
-		
 		driver.quit();
 
 	}
