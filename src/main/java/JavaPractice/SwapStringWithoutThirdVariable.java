@@ -4,8 +4,8 @@ public class SwapStringWithoutThirdVariable {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String a = "Hello vivky"; 
-        String b = "World"; 
+		String a = "Hello vicky"; 
+        String b = "World vicky"; 
           
         // Print String before swapping 
         System.out.println("Strings before swap: a = " +  
@@ -30,6 +30,20 @@ public class SwapStringWithoutThirdVariable {
         
        
         System.out.println(Str.substring(0,10)); */
+        
+        
+        
+        //Swap two numbers
+        
+        int first = 20, second= 40;
+        
+        first = first -second;
+        second = first+second;
+        first = second-first;
+        
+        System.out.println("After swap" +"first:" +first +"second:" +second);
+        
+        
     }     
 	}
 
