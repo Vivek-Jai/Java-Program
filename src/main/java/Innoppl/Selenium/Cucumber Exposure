@@ -55,6 +55,4 @@ public void enter_username-password( String UN, String pwd)
 }
 
 
-Stepdefinition file format:
 
-@when(^enter 
