@@ -18,3 +18,43 @@ Format : It give the test report in Html, json format,xml format
 json:json_output/cucumber.json, junit:junit_xml/cucumber.xml
 Strict: It is used to throws error for undefined steps or method
 Tags: It run only the tagged name testcase eg: Tag = @smoke,@regression
+Hooks: Before and After JUnit annotations
+BackGround:  Is used to define a step or series of steps that are common to all the tests in the feature file.
+It runs before each and every scenario were for a feature in which it is defined
+
+
+Without Example:
+
+Feature file format:
+
+When: Enter the "Admin and "Admin123"
+
+StepDefinition file format:
+
+@When(^ enter the \"(.*)\" and \"(.*)\"$)
+public void enter_username-password( String UN, String pwd)
+
+{
+}
+
+
+With example:
+
+Feature file format:
+
+When : Enter the <username> and <password>
+
+Examples:
+| username | password |
+|Admin | Admin123 |
+
+@When(^ enter the \"(.*)\" and \"(.*)\"$)
+public void enter_username-password( String UN, String pwd)
+
+{
+}
+
+
+Stepdefinition file format:
+
+@when(^enter 
